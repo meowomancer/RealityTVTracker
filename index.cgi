@@ -40,23 +40,23 @@ use DBI;						#http://dbi.perl.org/
 use CGI::Session;				#http://search.cpan.org/~markstos/CGI-Session-4.48/
 use Digest::SHA qw(sha384_hex);	#http://search.cpan.org/~mshelor/Digest-SHA-5.85/lib/Digest/SHA.pm
 
-#Initilization of variable for CGI as well as the creation of the objects
+#Initialization of variable for CGI as well as the creation of the objects
 our($CGI, $session);
 $CGI = new CGI;
 $session = new CGI::Session();
 
-#Session Mangement
+#Session Management
 our $CGISESSID = $session->id();
 
 #DB Connection
 our($db_user, $db_password, $db_host, $db_database);
-do("../ahoyz_config/db_config.cgi");
+do("");
 our $dbString = "DBI:mysql:" . $db_database . ":" . $db_host;
 our $db = DBI->connect($dbString, $db_user, $db_password, {'RaiseError' => 1});
 our $db_query;
 
 #Website URL -- FQA of index.cgi
-our $url = qq(http://r0b0tic.com/test/ahoyz/index.cgi);
+our $url = qq();
 
 #Custom CSS
 our $CSS = qq(
