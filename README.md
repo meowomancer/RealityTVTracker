@@ -33,7 +33,7 @@ Credits
 * Gabe Aron: Developer (graphing), Tester
 * Mack Hagen: Designer, Tester
 * Cory Olivieri: Requirements Analyst, Architect
-* Zachary Yamada: Project Manager, Lead Developer
+* Hazel Yamada: Project Manager, Lead Developer
 * Adam Zucker: Architect, Designer
 
 Other
